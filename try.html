@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <script type="text/javascript">
+        var i=0;
+        function add(type)
+        {
+            i=i+1;
+            if(i==1)
+                {
+                    var element = document.createElement('<textarea name=reply id=reply>');
+                    //element.setAttribute("name",reply);
+                    element.setAttribute("rows",4);
+                    element.setAttribute("cols",20);
+                    var foo = document.getElementById("fooBar");
+                    foo.appendChild(element);
+                }
+
+        }
+        function remove()
+        {
+             var element = document.getElementById('reply');
+            var parent = document.getElementById('fooBar');
+            parent.removeChild(element);
+            i=0;
+            //document.getElementById("reply").style.visibility="hidden";
+        }
+        </script>
+      <style>
+            textarea#reply
+            {
+                width: 300px;
+                height: 60px;
+                padding: 5px;
+                font-family: Tahoma, sans-serif;
+                background-image: url(bg.gif);
+                background-position: bottom right;
+                background-repeat: no-repeat;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+                <input type="button" value="add" onclick="add()"/>
+                <input type="button" value="remove" onclick="remove()"/>
+                <span id="fooBar">&nbsp;</span>
+        </form>
+    </body>
+</html>

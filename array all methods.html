@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array</title>
+</head>
+<body>
+
+<input type="text" name="elemet1" id="ele1"><br>
+<input type="text" name="elemet1" id="ele2"><br>
+<input type="text" name="elemet1" id="ele3"><br>
+<input type="text" name="elemet1" id="ele4"><br>
+<input type="text" name="elemet1" id="add"><br>
+
+<button id="display">Display</button><br><button id="push">Push</button><br><button id="pop">pop</button><br><button id="shift">Shift</button><br><button id="sort">Sort</button><br><button id="revsort">Reverse Sort</button><button id="reset">Clear</button>
+ 
+<p id="res"></p>
+<script type="text/javascript">
+	
+var arr =[];
+
+document.getElementById('display').onclick = function (){
+	for(var i=1;i<5;i++){
+		arr.push(document.getElementById('ele'+i).value);
+	}
+	display();
+	
+}
+
+
+document.getElementById('push').onclick = function(){
+	arr.push(document.getElementById('add').value);
+	display();
+}
+
+document.getElementById('reset').onclick = function (){
+	document.getElementById('res').innerHTML='';
+}
+
+document.getElementById('pop').onclick = function(){
+	var x = arr.pop();
+	document.getElementById('res').innerHTML = 'Element Popped ='+x;
+}
+
+document.getElementById('shift').onclick = function(){
+	var x = arr.shift();
+	document.getElementById('res').innerHTML = 'Element Shifted ='+x;
+}
+
+document.getElementById('sort').onclick = function(){
+	arr = arr.sort()
+	display();
+}
+
+document.getElementById('revsort').onclick = function(){
+	arr = arr.sort().reverse();
+	display();
+}
+
+function display(){
+	document.getElementById('res').innerHTML = arr;
+}
+</script>
+</body>
+</html>

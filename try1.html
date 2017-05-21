@@ -1,0 +1,28 @@
+<html>
+<head>
+    <Style>
+        .lol{
+            font-size:100px;
+            color:blueviolet;
+            transition: 1s all ease;
+        }
+       /* .lol1{
+            font-size:20px;
+            color:green;
+            transition: 5s all ease;
+        } */ 
+    </Style>
+    </head>
+    <body>
+        <p>hellooooo!!!!</p>
+        <script src="jquery-3.2.0.min.js"> </script>
+        <script>
+        $('p').on("mouseover mouseout",function(){
+            $(this).toggleClass('lol');
+        });
+    /*    $('p').on("mouseout",function(){
+            $(this).toggleClass('lol1');
+                 });  */ 
+        </script>
+    </body>
+</html>

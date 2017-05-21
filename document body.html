@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Body</title>
+</head>
+<body>
+Hello
+<span></span>
+<p>World</p>
+
+<div id="abc">Hello World</div>
+
+<script type="text/javascript">
+	var x = document.body.innerHTML;
+	document.getElementsByTagName('span')[0].innerHTML = '<br>'+x;
+	document.getElementsByTagName('p')[0].innerHTML = x;
+	document.getElementById('abc').style.background='red';
+</script>
+
+</body>
+</html>

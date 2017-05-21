@@ -1,0 +1,33 @@
+<html>
+<head>
+    </head>
+    <body>
+    
+    <button onclick="window1()">Get Outer browser area</button>
+    
+    <button onclick="window2()">Get Inner browser area</button>
+    
+    <button onclick="history1()">Get History browser area</button>
+        
+        <script type="text/javascript">
+                function window2()
+                {
+                alert("Height = "+window.innerHeight+"& Width = "+window.innerWidth);
+                }
+            function window1()
+                {
+                alert("Height = "+window.outerHeight+"& Width = "+window.outerWidth);
+                }
+            
+            function history1()
+                {
+                alert("History length = "+window.History.length);
+                }
+            
+        </script>
+            
+            
+            
+            
+    </body>
+</html>

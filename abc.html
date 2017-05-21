@@ -1,0 +1,48 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+
+function displayOutput3(){
+var x= Input.value ;
+var y = Input1.value;
+var a = x - y;
+document.write("subtraction :", a)
+}
+
+
+function displayOutput(){
+var x= Input.value ;
+var y = Input1.value;
+var a = x * y;
+document.write("multipication :", a)
+}
+
+
+function displayOutput1(){
+var x= Input.value ;
+var y = Input1.value;
+var c = x / y;
+document.write("division:", c);
+}
+
+function displayOutput2(){
+var x= Number(Input.value) ;
+var y = Number(Input1.value);
+var b = x + y;
+document.write("sum :", b);
+}
+
+</script>
+<body>
+<h1>Enter the value of x and y:<h1>
+<input type="text" id="Input" /> = X </input>
+<input type="text" id="Input1" /> = Y </input>
+<br /><br />
+<button onclick="displayOutput()">*</button>
+<button onclick="displayOutput1()">/</button>
+<button onclick="displayOutput2()">+</button>
+<button onclick="displayOutput3()">-</button>
+</body>
+</html>

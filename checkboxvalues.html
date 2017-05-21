@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>
+Checkbox value </title>
+</head>
+<body>
+    <form>
+        <p>
+           <input type="checkbox" name="abc" value="100">Pizza &nbsp;
+        <input type="checkbox" name="abc" value="50">Burger <br>
+        <input type="checkbox" name="abc" value="100">Sandwich &nbsp;
+        <input type="checkbox" name="abc" value="100">Idli
+        </p>
+        
+        
+        <button onclick = "xyz()" type="button">Total</button>
+        <h3 id ="bill"></h3>
+        
+        <script>
+
+            av=document.getElementsByName("abc");
+            function xyz()
+            {
+                d=0;
+                for(e=0;e<av.length;e++)
+                    {
+                        if(av[e].checked==true)
+                            {
+                                d+=parseInt(av[e].value);                         
+                            }
+                    }
+            
+            
+            document.getElementById('bill').innerHTML = d;
+            }
+            
+        </script>
+        
+    
+    
+    </form>
+    
+    
+    
+    
+    </body>

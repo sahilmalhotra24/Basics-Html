@@ -1,0 +1,41 @@
+<html>
+<head>
+<title> YO array methods </title>
+</head>
+<body>
+E1 -<input type = "text" name = "element1" id = "e1"> <br><br>
+
+E2 - <input type = "text" name = "element2" id = "e2"> <br><br>
+
+E3 - <input type = "text" name = "element3" id = "e3"> <br><br>
+
+E4 -<input type = "text" name = "element4" id = "e4"> <br><br>
+
+E5 -<input type = "text" name = "element5" id = "e5"> <br><br>
+
+<button id = "display" onclick = "display()">Display</button>
+
+<button id = "sort" onclick = "sort()">Sort</button>
+
+<button id = "push" onclick = "push()">Push</button>
+
+<button id = "pop" onclick = "pop()">Pop</button>
+
+<button id = "shift" onclick = "shift()">Shift</button>
+
+<button id = "unshift" onclick = "unshift()">unshift</button>
+
+<script>
+var arr[];
+function display()
+{
+for (var i =0;i<5;i++)
+{
+arr.push(document.getElementById("e"+i).value)
+}
+display();
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>Q31</title> 
+<script src="jquery-3.2.0.min.js"></script> 
+</head> 
+<body> 
+<h1>Animate method </h1><hr> 
+<img src="google.png" height="300" width="400"/> 
+<h1>Chaining</h1><hr> 
+<p id="4" style="color : purple">On clicking on this text first this text will change color to red ad then it will slideup and then down!! Whoa!! Thats awesome!! :D </p><br> 
+<button id="button">CHAINING</button> 
+<script> 
+$("img").click(function(){$(this).animate({height : 300, width : 550}, 1000)}); 
+$("#button").click(function(){$("#4").slideUp().slideDown().css("color","red")}); 
+</script> 
+</body> 
+</html> 

@@ -1,0 +1,22 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title> ques 32 </title> 
+</head> 
+<body> 
+<script> 
+x = document.body; 
+y = document.createElement("p"); 
+y.innerHTML = "First Tag"; 
+x.append(y); 
+z = document.createElement("p"); 
+z.innerHTML = "Second tag"; 
+x.append(z); 
+w = document.createElement("p"); 
+w.innerHTML = "Third tag"; 
+x.append(w); 
+a = x.childNodes; 
+a[2].style.color = "red"; 
+</script> 
+</body> 
+</html> 

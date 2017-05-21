@@ -1,0 +1,18 @@
+<html>
+<head>
+<title> menu card </title>
+<body> 
+<HR> Menu Card </HR>
+<ol type = "1">
+<li>Burgers </li>
+	<ul style = "list-style-type=circle">
+	<li> Cheese burger </li>
+	<li> Veg Burger </li>
+	<li> Noodles Burger </li>
+	</ul>
+<ol type ="1" start="2">
+<li> Patties </li>
+<li> Noodles </li>
+<li> Coffee </li>
+</body>
+</html>

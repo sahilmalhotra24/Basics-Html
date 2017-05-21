@@ -1,0 +1,92 @@
+<html>
+<head>
+    <body>
+        <table border="2px">
+            <tr>
+                <td>
+                    1
+                </td>
+                <td>
+                    2
+                </td>
+                <td>
+                    3
+                </td>
+                <td>
+                    4
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    5
+                </td>
+                <td>
+                    6
+                </td>
+                <td id="a">
+                    7
+                </td>
+                <td id="b">
+                    8
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    9
+                </td>
+                <td id="c">
+
+                </td>
+                <td>
+                    10
+                </td>
+                <td>
+                    11
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    12
+                </td>
+                <td>
+                    13
+                </td>
+                <td>
+                    14
+                </td>
+                <td>
+                    15
+                </td>
+            </tr>
+
+
+        </table>
+
+        <br />
+        <input type="button" value="Add" onclick="add()" />
+        <input type="button" value="Remove" onclick="remove()" />
+        <input type="button" value="Replace" onclick="replace()" />
+        <script>
+            function add() {
+                var d = document.createTextNode("Hello");
+                var e = document.getElementById("c");
+                c.appendChild(d);
+
+            }
+
+            function remove() {
+                var a = document.getElementById("a");
+                a.removeChild(a.childNodes[0]);
+            }
+
+            function replace() {
+                var a = document.createTextNode("replaced");
+                var d = document.getElementById("b").childNodes[0];
+                b.replaceChild(a, d);
+
+            }
+        </script>
+
+    </body>
+
+</head>

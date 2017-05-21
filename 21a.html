@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>exp 21 a </title>
+    </head>
+    <body>
+    <input type = "text" id = "i1">
+    <input type = "text" id = "i2">
+    <input type = "text" id = "i3">
+    <input type = "text" id = "i4">
+    <input type = "text" id = "i5">
+    
+        <button onclick="add()">Add</button>
+    <button onclick="display1()">display</button>
+<p id="res"></p>
+    </body>
+    
+    <script>
+    var arr = [];
+    function add()
+    {    for(var i = 0;i<5;i++)
+            {
+                var x = document.getElementById('i'+(i+1)).value;
+                arr.push(x);
+            }
+    }
+        function display1(){
+            document.getElementById('res').innerHTML = arr;
+        }
+        
+    </script>
+</html>
+    
+    

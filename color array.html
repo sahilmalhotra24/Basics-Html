@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slice Function</title>
+</head>
+<body>
+
+	<script>
+
+	var arr = ['red','blue','yellow','orange','purple','green'];
+
+	
+	document.write(arr+'<br>');
+
+	var new1=arr.splice(2,3);
+	document.write(new1+'<br>');
+
+	var new2=arr.join("+");
+	document.write(new2+'<br>');
+
+	var new3=arr.join(' ');
+	document.write(new3+'<br>');
+
+	var new4 =arr;
+	new4.unshift('brown');
+	document.write(new4+'<br>');
+	
+	var new5 = arr.sort();
+	document.write(new5);
+	document.write("<br>"+new5.reverse());
+	</script>
+
+
+</body>
+</html>

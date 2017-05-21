@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Jquery</title>
+        <script src="jquery-3.2.0.min.js"></script>
+    </head>
+    
+    <body style="background:black">
+        <div class="main">
+            <div id="conten" style="color:yellow">
+                <p id="one">P first</p>
+                <p id="two">P second</p>
+                <h1 id="three"> Jquery</h1>
+                <h1 id="fourth">H1 second</h1>
+                <p id="fifth">P last</p>
+            </div>
+        </div>
+        <button id="hide">Hide</button>
+        <button id="toggle">toggle</button>
+        <button id="op">Opace</button>
+        
+        
+        <script>
+            $('#hide').click(function(){
+                $('#two').hide('slow');
+                $('#fourth').hide('slow');
+            })
+            
+            $('#op').click(function(){
+                $('p').fadeOut();
+            })
+            
+            $('#toggle').click(function(){
+                $('h').toggle('slow');
+                $('p').toggle('slow');
+            })
+        </script>
+        
+    </body>
+</html>

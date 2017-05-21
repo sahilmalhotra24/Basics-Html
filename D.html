@@ -1,0 +1,38 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+  var color = ["lightblue", "crimson", "darkblack", "orange", "cyan"];
+  document.write(color.join('+'));
+  document.write('<br>' + color.join(' '));
+  delete color[5];
+
+  delete color[3];
+  document.write('<br>' + color.join(' '));
+  var color = ["lightblue", "crimson", "darblack", "orange", "cyan"];
+  document.write('<br>' + color.sort().reverse());
+  color.unshift('blue');
+  document.write('<br>' + color.join(' '));
+
+  var value = [140,178,58,60,95,40];
+  value.sort(function(a,b) {
+    return b-a;
+  });
+  document.write('<br>' + value);
+
+  value.sort(function(a,b) {
+    return a-b;
+  });
+  document.write('<br>' + value);
+
+  var demo = ['apple', 'mango', 'banana'];
+  var demo1 = [123, 456, 789];
+  document.write('<br>');
+
+  var new1= demo.concat(demo1);
+  document.write(new1);
+</script>
+
+</body>
+</html>

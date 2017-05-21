@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Cst Eval2</title>
+  </head>
+  <body>
+<main>
+  <h1>Welcome</h1>
+</main>
+    <button onclick="Abc()">add textArea</button>
+    <button onclick="Rmv()">Remove Textarea</button>
+    <button onclick="Replace11()">Replace text area</button>
+
+<script>
+var a = document.getElementsByTagName("main")[0];
+var b = document.createElement("textarea");
+    var txt = document.createTextNode("Hello DOM BOM Demo");
+
+        function Abc() {
+            b.appendChild(txt);
+            a.appendChild(b);
+        }
+
+        function Rmv() {
+            var remove = document.getElementsByTagName("textarea")[0];
+            a.removeChild(remove);
+        }
+
+        function Replace11() {
+            var b = document.getElementsByTagName("textarea")[0];
+            b.innerHTML = "Fake World";
+        }
+  </script>
+</body></html>

@@ -1,0 +1,38 @@
+<html>
+<body>
+<ol id="main">
+<li id ="yes">chd</li>
+<li id ="yes1">rjp</li>
+<li id ="yes2">atk</li>
+<li id ="yes3">jpg</li>
+<li id ="yes4">cla</li></ol>
+<button onclick="f1()">add</button> <button onclick="f2()">replace</button>
+<button onclick="f3()">remove</button>
+<script type="text/javascript">
+function f1()
+{
+var a=document.createElement("li");
+var b=document.createTextNode("akl");
+a.appendChild(b);
+var d=document.getElementById("main");
+//ar e=document.getElementById("yes1");
+d.appendChild(a);}
+function f2()
+{
+var a=document.createElement("li");
+var b=document.createTextNode("akl");
+a.appendChild(b);
+var d=document.getElementById("main");
+var e=document.getElementById("yes1");
+d.replaceChild(a,e);}
+function f3()
+{
+var a=document.getElementById("main");
+var b=document.getElementById("yes1");
+var c=document.getElementById("yes2");
+a.removeChild(c);
+a.removeChild(b);}
+//ar e=document.getElementById("yes1");
+//d.appendChild(a);}
+</script>
+</body>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+<script>
+		var app = angular.module("abc", []);
+app.controller("customersCtrl", function($scope) {
+  $scope.names = [{name:"Sarah ",country:"India",age:"21"},
+  {name:"Sakshi ",country:"India",age:"20"},
+  {name:"Nemo ",country:"India",age:"20"},
+  {name:"Bunny ",country:"India",age:"19"},
+  {name:"Dhawan ",country:"India",age:"20"},
+  {name:"Sethi ",country:"India",age:"20"}
+    
+  ]
+});
+	</script>
+<body>
+
+<div ng-app="abc" ng-controller="customersCtrl"> 
+
+<table>
+<tr ng-repeat="i in names">
+<td>{{i.name}}</td>
+<td>{{i.age}}</td>
+<td>{{i.country}}</td>
+</tr>
+</table>
+
+</div>
+
+
+</body>
+</html>
+

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<body ng-app="">
+<h4>Show name</h4>  <input type="checkbox" ng-model="myVar">
+
+<div ng-show="myVar">
+<h1>show working</h1>
+</div>
+
+<div ng-hide="myVar">
+<h1> hide working </h1>
+</div>
+    <input type="radio" ng-model="myVar1" value="value1">value 1
+  <input type="radio" ng-model="myVar1" value="value2">value 2
+  <input type="radio" ng-model="myVar1" value="value3">value 3
+<div ng-switch="myVar1">
+  <div ng-switch-when="value1">
+     <h1>value1</h1>
+
+  </div>
+  <div ng-switch-when="value2">
+     <h1>value 2</h1>
+
+  </div>
+  <div ng-switch-when="value3">
+     <h1>value3</h1>
+
+  </div>
+
+
+</div>
+</body>
+</html>

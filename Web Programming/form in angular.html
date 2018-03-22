@@ -1,0 +1,18 @@
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular-messages.min.js"></script>
+<script>
+angular.module('app', ['ngMessages'])</script>
+<body ng-app="app">
+  <form name="formValidation">
+
+    <label>Username</label>
+    <input type="text" name="username" ng-model="inputname" ng-minlength="6" ng-maxlength="12" required>
+    <div ng-messages ="formValidation.username.$error">
+      <p ng-message ="minlength">Username should have at least 6 characters.</p>
+      <p ng-message ="maxlength">Username should have at most 12 characters.</p>
+      <p ng-message ="required">Providing a username is mandatory.</p>
+    </div>
+  </form>
+</body>
+</html>

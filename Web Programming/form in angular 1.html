@@ -1,0 +1,33 @@
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular-messages.min.js"></script>
+<script>
+angular.module('app', ['ngMessages'])</script>-->
+
+<body ng-app="myapp">
+  <div ng-controller="myctrl">
+
+  <form name="formValidation">
+
+    <label>Username</label>
+    <input type="email" name="username" ng-model="inputname" ng-minlength="6" ng-maxlength="30" required>
+    <input type="button" name="button" value="SUBMIT" ng-click="fn()">
+    <p>{{xyz}}</p>
+
+      <p ng-show ="formValidation.username.$error.minlength">Username should have at least 6 characters.</p>
+      <p ng-show ="formValidation.username.$error.maxlength">Username should have at most 30 characters.</p>
+      <p ng-show ="formValidation.username.$error.required">Providing a username is mandatory.</p>
+    </div>
+  </form>
+</div>
+<script>
+var app=angular.module('myapp',[]);
+app.controller('myctrl',function($scope)
+{
+  $scope.fn=function(){
+    $scope.xyz="form has been submitted";
+  }
+});
+</script>
+</body>
+</html>
